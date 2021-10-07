@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image.jpg" type="image/x-icon">
+    <title>Survey for Jemi-Glow product</title>
+</head>
+<body>
+    <div id = "header">
+        <h1 id = "title">Thank you for helping us help you!</h1>
+        <p id = "description">Kindly fill this survey <em>as honestly as you can</em> and get <em><u>free shipping!</u></em> on your next purchase</p>
+    </div>
+
+    <div id = "main">
+       
+        <div id="background"></div>
+
+        <form id = "survey-form">
+            <div id="form-group">
+                <label for="name" id = "name-label">Name:</label>
+                <input type="text" id = "name" name="name" placeholder = "Enter your name" required>
+            </div>
+            
+            <div id="form-group">
+                <label for="age">Age: <sub>(optional)</sub></label>
+                <input type="number" name="age" id="age" placeholder = "Age"
+                min="10"
+                max="99"
+                id = "email">
+            </div>
+
+            <div id = "form-group">
+                <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div id="form-group">
+                <p>How often do you wash your hair?</p>
+                <select name="hair-washing" id="drop-down" required>
+                    <option disabled selected value>Select the frequency of your wash days</option>
+                    <option value="daily">1-6 days</option>
+                    <option value="weekly">Every week</option>
+                    <option value="bi-weekly">Every few weeks</option>
+                    <option value="monthly">Every month</option>
+                    <option value="bi-monthly">Every few months</option>
+                    <option value="Never">I'm supposed to wash my hair?</option>
+                </select>
+            </div>
+
+            <div id="form-group">
+                <p>How long do you leave your protective styles in?</p>
+                    <select name="protection" id="drop-down" required>
+                        <option disabled selected value>Kindly select the duration of your protective styles</option>
+                        <option value="In-week">1-6 days</option>
+                        <option value="week">For a week</option>
+                        <option value="weeks">For a few weeks</option>
+                        <option value="month">For a month</option>
+                        <option value="months">For a few months</option>
+                        <option value="year">I've got locs</option>
+                        <option value="never">You see I'm busy so...</option>
+                    </select>
+            </div>
+
+            <div id="form-group">
+                <p>How long is your hair?</p>
+                <label>
+                    <input type="radio" name = "length-hair" value = "twa">TWA
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="length-hair" value = "short">Short
+                </label>
+
+                <br>
+
+                <label>
+                <input type="radio" name="length-hair" value = "medium" checked>Medium
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="length-hair"  value = "long">Long
+                </label>
+            </div>
+
+            <div id="form-group">
+                <p>Is your hair dyed/chemically altered</p>
+                <label>
+                    <input type="radio" name="chemically" value = "yes">Yes
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="chemically" value = "no">No
+                </label>
+            </div>
+
+            <div id="form-group">
+                <p>Which of my products do you use? <span>(select all that apply)</span></p>
+
+                <label>
+                    <input type="checkbox" name="product" value = "shampoo-natural">Natural Shampoo
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "conditioner-natural">Natural Conditioner
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "cream-natural">Natural Cream
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "shampoo-relaxed">Relaxed Shampoo
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "contioner-relaxed">Relaxed Conditioner
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "deepconditioner-natural">Natural Deep-Conditioner
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "deepconditioner-relaxed">Relaxed Deep-Conditioner
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "oil">Growth Oil
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "repair">Repairing Mask for Damaged hair
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "leavein">Lave-In Conditioner
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="product" value = "gel">Curl Activator
+                </label>
+            </div>
+
+            <div id="form-group">
+                <p>Have my products benefitted you even after using them as required?</p>
+
+                <label>
+                    <input type="radio" name="benefit" value = "yes" checked>Yes
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="benefit" value ="no">No
+                </label>
+            </div>
+
+            <div id="form-group">
+                <label for="complain">If no specify reasons below</label>
+                <textarea name="complain" id="complain" cols="40" rows="1" placeholder = "Input complaint"></textarea>
+            </div>
+
+            <div id="form-group">
+                <label for="comnment">Any comments or suggestions?</label>
+                <textarea name="complain" id="complain" cols="40" rows="10" placeholder="Input Comment" required></textarea>
+            </div>
+
+            <div id="form-group">
+                <input type="Submit" value="Submit" id = "submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
